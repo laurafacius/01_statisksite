@@ -9,58 +9,49 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="product">
-    <header class="menu">
-        <a href="index.html">
-            <h1>Fashion<span>R</span>Us</h1>
-        </a>
-
+<body>
+    <header>
+        <h1 class="site-title">FashionRUs</h1>
         <nav>
-            <a href="kategori.html">Categories</a>
-            <a href="kategori.html">Brands</a>
-            <a href="kategori.html">Seasons</a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="kategori.html">Sportstøj</a></li>
+                <li><a href="kategori.html">Tilbehør</a></li>
+                <li><a href="kategori.html">Produkt</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <ol class="breadcrumbs">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="kategori.html">Categories</a></li>
-            <li><a href="produktliste.html">Apparel</a></li>
-            <li>PUMA Fodbold</li>
-        </ol>
-
-        <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="PUMA Fodbold">
-
-        <section class="purchaseBox">
-            <h3>PUMA Fodbold</h3>
-            <p>PUMA / Fodbold</p>
-            <form>
-                <label>Choose a side
-                    <select name="size">
-                        <option>s</option>
-                        <option>m</option>
-                        <option>l</option>
-                        <option>xl</option>
-                    </select>
-                </label>
-                <button>Add to basket</button>
+    <main class="product">
+        <img class="product-image" src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="PUMA Fodbold">
+        <section class="product-info">
+            <h3 class="product-title">PUMA Fodbold</h3>
+            <p><span class="brand">PUMA</span> / <span class="articletype">Fodbold</span></p>
+            <h4><span class="price">1000</span>DKK</h4>
+            <form class="product-form">
+                <label for="size" class="product-label">Choose a size:</label>
+                <select id="size" name="size" class="product-select">
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <button class="product-button">Add to basket</button>
             </form>
-        </section>
-
-        <section class="info">
-            <dl>
-                <dt>Model name</dt>
-                <dd>PUMA Fodbold</dd>
-                <dt>Color</dt>
-                <dd>Hvid, sort, gul</dd>
-                <dt>Inventory number</dt>
-                <dd>1234</dd>
+            <h2>Produkt informationer</h2>
+            <dl class="info-list">
+                <dt class="info-term">Model name:</dt>
+                <dd class="info-description">PUMA Fodbold</dd>
+                <dt class="info-term">Inventory number:</dt>
+                <dd class="info-description">1234</dd>
             </dl>
-            <h1>PUMA</h1>
-            <p>PUMA Fodbold</p>
         </section>
     </main>
+    <footer class="footer">
+        <p>&copy; 2023 FASHIONRUS</p>
+    </footer>
+
+    <script src="js/product.js "></script>
 </body>
 
 </html>

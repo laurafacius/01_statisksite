@@ -9,33 +9,69 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="category">
-    <header class="menu">
-        <a href="index.html">
-            <h1>Fashion<span>R</span>Us</h1>
-        </a>
-
+<body>
+    <header>
+        <h1 class="site-title">FashionRUs</h1>
         <nav>
-            <a href="kategori.html">Categories</a>
-            <a href="kategori.html">Brands</a>
-            <a href="kategori.html">Seasons</a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="kategori.html">Sportstøj</a></li>
+                <li><a href="kategori.html">Tilbehør</a></li>
+                <li><a href="kategori.html">Produkt</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="brandList">
-            <section class="letterGroup">
-                <ol>
-                    <li><a href="produktliste.html">Accessories</a></li>
-                    <li><a href="produktliste.html">Apparel</a></li>
-                    <li><a href="produktliste.html">Footwear</a></li>
-                    <li><a href="produktliste.html">Free Items</a></li>
-                    <li><a href="produktliste.html">Personal Care</a></li>
-                    <li><a href="produktliste.html">Sporting Goods</a></li>
-                </ol>
-            </section>
-        </div>
+    <main class="category">
+        <section class="categories">
+            <h2>Vælg en kategori:</h2>
+            <div class="category-grid">
+                <div class="category">
+                    <a href="produktliste.html">Fodbold</a>
+                </div>
+                <div class="category">
+                    <a href="produktliste.html">Basketball</a>
+                </div>
+                <div class="category">
+                    <a href="produktliste.html">Løb</a>
+                </div>
+                <div class="category">
+                    <a href="produktliste.html">Tennis</a>
+                </div>
+                <div class="category">
+                    <a href="produktliste.html">Fitness</a>
+                </div>
+                <div class="category">
+                    <a href="produktliste.html">Golf</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>MEST SOLGTE PRODUKTER</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="Fodbold">
+                    <h3>Produkt 1</h3>
+                    <p><a href="produkt.html">Læs mere</a></p>
+                </div>
+                <div class="product">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="Fodbold">
+                    <h3>Produkt 2</h3>
+                    <p><a href="produkt.html">Læs mere</a></p>
+                </div>
+                <div class="product">
+                    <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="Fodbold">
+                    <h3>Produkt 3</h3>
+                    <p><a href="produkt.html">Læs mere</a></p>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 FASHIONRUS</p>
+    </footer>
 </body>
 
 </html>

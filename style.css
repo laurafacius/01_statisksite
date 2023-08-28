@@ -4,80 +4,280 @@
   padding: 0;
 }
 
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
+@media only screen and (min-width: 800px) {
+  body,
+  h1,
+  h2,
+  h3,
+  p,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
 
-.kategori {
-  background-color: rgb(176, 175, 175);
-  color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-}
+  /* Stil for headersektionen */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
 
-.kategori_box {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  width: 75%;
-  height: 100%;
-  gap: 1rem;
-  text-align: center;
-  margin-left: 15%;
-}
+  /* Stil for overskriften */
+  .site-title {
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-h2 {
-  font-size: 2.5rem;
-  line-height: 1.5;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  margin-top: 1em;
-}
+  /* Stil for navigationen */
+  nav ul {
+    list-style: none;
+  }
 
-h3 {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  font-weight: bold;
-  margin-top: 0.5em;
-}
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
 
-.produktliste {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 290px));
-  gap: 2rem;
-  margin-left: 7.5%;
-}
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
+  nav ul li a:hover {
+    color: #ff4500; /* Ændrer farven ved hover */
+  }
 
-.produktliste article.udsolgt::before {
-  content: "Udsolgt";
-  position: absolute;
-  background: black;
-  color: white;
-  padding: 1rem;
-}
+  /* kategori */
+  .categories {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+  }
 
-.nedsat p:last-child {
-  background: red;
-  padding: 0.2rem;
-  width: 15%;
-  height: 100%;
-}
+  .categories h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
 
-dt {
-  display: block;
-  font-weight: bold;
-}
+  /* Gridlayout til kategorier */
+  .category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolonner med samme bredde */
+    gap: 20px; /* Mellemrum mellem bokse */
+  }
 
-dd {
-  display: block;
-  margin-inline-start: 40px;
+  .category {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+
+  .category a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .category a:hover {
+    color: #ff4500; /* Ændrer farven ved hover */
+  }
+
+  .featured-products {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .featured-products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .featured-products {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .featured-products h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  /* Stil for individuelle produkter */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1 kolonne */
+    gap: 20px; /* Mellemrum mellem produkter */
+  }
+
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 1 kolonne */
+    gap: 20px; /* Mellemrum mellem produkter */
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .product p {
+    font-size: 14px;
+    color: #777;
+    grid-column: 2;
+  }
+
+  /* produktliste */
+  .produktliste {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-left: 7%;
+    margin-top: 5%;
+  }
+
+  .produktliste article {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    width: 70%;
+    height: auto;
+  }
+
+  .produktliste article img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .produktliste article.udsolgt::before {
+    content: "Udsolgt";
+    position: absolute;
+    background: black;
+    color: white;
+    padding: 1rem;
+    margin-left: 46%;
+  }
+
+  .produktliste .nedsat p:last-child {
+    background: red;
+    padding: 0.2rem;
+    width: 20%;
+    height: 6%;
+    position: absolute;
+  }
+
+  .produktliste h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .produktliste .pris span {
+    font-weight: bold;
+  }
+
+  .produktliste a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+  .produktliste article {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative; /* Tilføjet for at muliggøre positionering af rabatten */
+  }
+
+  .tilbud-label {
+    background-color: #e74c3c; /* Rød baggrundfarve */
+    color: #fff; /* Hvid tekstfarve */
+    font-weight: bold;
+    padding: 5px 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    z-index: 1;
+  }
+
+  .produktliste article {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  /* produkt */
+  .product {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* To kolonner med forholdet 1:2 */
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .product-image {
+    width: 100%;
+    height: auto;
+    width: 100%;
+    margin-left: 40%;
+  }
+
+  .additional-info {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr; /* Automatisk højde for rækker */
+  }
+
+  .product-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .product-description {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .product-label {
+    margin-bottom: 5px;
+  }
+
+  .product-select,
+  .product-button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
 }
