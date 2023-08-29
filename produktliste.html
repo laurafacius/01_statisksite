@@ -23,17 +23,26 @@
     </header>
 
     <main class="produktliste">
-        <article>
-            <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="Fodbold">
-            <h3>PUMA Fodbold</h3>
-            <p class="pris">
-                <span>Pris</span>
-                499 kr
-            </p>
-            <a href="produkt.html">Læs mere</a>
-        </article>
 
-        <article>
+
+        <template>
+            <article>
+                <img src="https://kea-alt-del.dk/t7/images/webp/1000/1550.webp" alt="Fodbold">
+                <h3 class="productdisplayname">PUMA Fodbold</h3>
+                <p class="articletype">Tshirt</p>
+                <p class="brandname">Nike</p>
+                <p>
+                    <span class="price">1595</span> DKK
+                </p>
+                <div class="nedsat">
+                    <p>Nu 249,50 kr</p>
+                    <p>-50%</p>
+                </div>
+                <a class="read-more" href="produkt.html">Læs mere</a>
+            </article>
+        </template>
+
+        <!--         <article>
             <img src="https://kea-alt-del.dk/t7/images/webp/1000/1551.webp" alt="Fodbold">
             <h3>PUMA Fodbold</h3>
             <p class="pris">
@@ -69,12 +78,14 @@
                 <p>-50%</p>
             </div>
             <a href="produkt.html">Læs mere</a>
-        </article>
+        </article> -->
     </main>
 
     <footer class="footer">
         <p>&copy; 2023 FASHIONRUS</p>
     </footer>
+
+    <script src="js/productlist.js"></script>
 </body>
 
 </html>
