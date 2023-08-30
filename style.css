@@ -51,6 +51,12 @@
     color: #ff4500; /* Ændrer farven ved hover */
   }
 
+  .red-letter {
+    color: #ff4500;
+    display: inline-block;
+    transform: scaleX(-1);
+  }
+
   /* kategori */
   .categories {
     background-color: #f4f4f4;
@@ -64,7 +70,7 @@
   }
 
   /* Gridlayout til kategorier */
-  .category-grid {
+  .categories {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 kolonner med samme bredde */
     gap: 20px; /* Mellemrum mellem bokse */
